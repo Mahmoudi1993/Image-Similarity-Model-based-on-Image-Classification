@@ -10,17 +10,11 @@ This model is trained using Image Classifier  and Resnet18 in such a way that it
     The images in CIFAR-10 are of size 3x32x32, i.e. 3-channel color images of 32x32 pixels  in size.
 
      We will do the following steps in order:
-   
      *	Load and normalizing the CIFAR10 training and test datasets using torchvision.
-   
-     *	Define a Convolution Neural Network
-   
-     *	Define a loss function
-   
+     *	Define a Convolution Neural Network   
+     *	Define a loss function 
      *	Train the network on the training data
-   
      *	Test the network on the test data
-   
      *	Loading and normalizing CIFAR10
 
 2. Resnet18
@@ -29,6 +23,17 @@ This model is trained using Image Classifier  and Resnet18 in such a way that it
    network one by one.Based on the resnet18 implementation from PyTorch it creates feature vectors from the input images, compares it to the other images and sorts for each image a similarity list. Eventually, the 
    result is visualized for a tiny test set that is provided within the repository.
 
-Architecture of Image Similarity method based on Image Classification:
+
+
+
+
+   
+
+**Architecture of Image Similarity method based on Image Classification:**
+
+
+
+ ![Image Similarity with classification](https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification/assets/74957886/2915836e-ac62-4611-b9d4-73762c857000)
+
    
 
