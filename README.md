@@ -36,4 +36,12 @@ This model is trained using Image Classifier  and Resnet18 in such a way that it
  ![Image Similarity with classification](https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification/assets/74957886/2915836e-ac62-4611-b9d4-73762c857000)
 
 # Getting Started   
+1. Clone this repo:
+
+3. 
+
+# Command Line Args & Reference
+**Command Line Args**
+
+**Reference**
 
