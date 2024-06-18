@@ -55,7 +55,7 @@ conda activate Image-Similarity-Model-based-on-Image-Classification
 sh scripts/install.sh
 ```
 # Pretrained Model
-the pretrained model classificatin would place in checkpoints.
+the pretrained models classificatin would place in checkpoints.
 
 # Command Line Args & Reference
 **Command Line Args**
