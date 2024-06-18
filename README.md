@@ -38,6 +38,8 @@ This model is trained using Image Classifier  and Resnet18 in such a way that it
 # Getting Started   
 1. Clone this repo:
 
+' ' ' https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification.git  ' ' '
+
 3. 
 
 # Command Line Args & Reference
