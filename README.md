@@ -37,10 +37,19 @@ This model is trained using Image Classifier  and Resnet18 in such a way that it
 
 # Getting Started   
 1. Clone this repo:
-
-' ' ' https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification.git  ' ' '
-
-3. 
+```
+git clone https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification.git
+cd Image-Similarity-Model-based-on-Image-Classification
+```
+2. Install conda.
+3. Install all the dependencies
+```
+conda env create --file env.yml
+```
+4. Switch to the conda environment
+```
+conda activate Image-Similarity-Model-based-on-Image-Classification
+```
 
 # Command Line Args & Reference
 **Command Line Args**
