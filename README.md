@@ -50,6 +50,12 @@ conda env create --file env.yml
 ```
 conda activate Image-Similarity-Model-based-on-Image-Classification
 ```
+5. Install other dependencies
+```
+sh scripts/install.sh
+```
+# Pretrained Model
+the pretrained model classificatin would place in checkpoints.
 
 # Command Line Args & Reference
 **Command Line Args**
