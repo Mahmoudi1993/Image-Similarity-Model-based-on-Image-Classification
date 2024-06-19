@@ -69,7 +69,7 @@ Measure_Similar_Images.py:
   --model: path to weights model
     (default: './checkpoint/cifar_net.pth')
   --inputDir: path to folders are given as input to the resnet18 network
-    (default: ./inputImagesCNN)
+    (default: ./inputImagesResnet18)
   --epoch: An epoch means training the neural network with all the training data for one cycle
     (default: 0)
  --Pickle: test_batch
