@@ -59,6 +59,12 @@ the pretrained models classificatin would place in checkpoints.
 
 # Command Line Args & Reference
 **Command Line Args**
+```
+```
 
 **Reference**
+
+  * https://medium.com/@nagam808surya/cifar-10-image-classification-using-pytorch-90332041ba1f
+  * https://towardsdatascience.com/effortlessly-recommending-similar-images-b65aff6aabfb
+  * https://towardsdatascience.com/recommending-similar-images-using-pytorch-da019282770c
 
