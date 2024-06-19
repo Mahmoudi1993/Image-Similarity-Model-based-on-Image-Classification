@@ -60,6 +60,21 @@ the pretrained models classificatin would place in checkpoints.
 # Command Line Args & Reference
 **Command Line Args**
 ```
+Measure_Similar_Images.py:
+
+  --Dataset: path to input dataset
+    (default: None)
+  --data: path to test data(CIFAR-10 dataset)
+    (default: None)
+  --model: path to weights model
+    (default: './checkpoint/cifar_net.pth')
+  --inputDir: path to folders are given as input to the resnet18 network
+    (default: ./inputImagesCNN)
+  --epoch: An epoch means training the neural network with all the training data for one cycle
+    (default: 0)
+ --Pickle: test_batch
+    (default: None)
+
 ```
 
 **Reference**
