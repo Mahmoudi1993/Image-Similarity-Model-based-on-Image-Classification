@@ -69,7 +69,7 @@ output: {'shooting_brake_s_000973.png': 'car', 'green_frog_s_000634.png': 'frog'
 
 # Image similarity
 ```
-python New_Scratch_image_classification_inference.py
+python Measure_Similar_Images.py
 ```
 **Output:**
 
