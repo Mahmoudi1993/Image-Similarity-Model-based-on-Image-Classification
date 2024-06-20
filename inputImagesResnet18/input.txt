@@ -1,1 +1,2 @@
 # input to the resnet18 network
+# Please follow the command Measure_Similar_Images.py to loading all the folders fo the  labeling images in inputImagesResnet18 folder.
