@@ -73,6 +73,7 @@ python Measure_Similar_Images.py
 ```
 **Output:**
 
+![image_similarity](https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification/assets/74957886/7a645a6f-defc-4360-926a-2f7ed7f72d53)
 
 
 # Command Line Args & Reference
