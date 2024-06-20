@@ -40,7 +40,7 @@ class predictor():
 
         testset = torchvision.datasets.CIFAR10(root= self.path, train=False,
                                                 download=True, transform=transform)
-        testloader = torch.utils.data.DataLoader(testset, batch_size=4,
+        testloader = torch.utils.data.DataLoader(testset, batch_size=40,
                                                     shuffle=False, num_workers=2)
 
         classes = ('plane', 'car', 'bird', 'cat',
@@ -83,14 +83,16 @@ class predictor():
         def unpickle(file):
             fo = open(file, 'rb')
             dict = pickle.load(fo, encoding ='latin1')
-            X = dict['filenames'][:4]
+            X = dict['filenames'][6:10]
             fo.close()
             return X
 
         F = unpickle(self.Pickle)
         dataiter = iter(testloader)
         images, labels = next(dataiter)
-
+        images = images[6:10]
+        labels = labels[6:10]
+        
         # print images
         import matplotlib.pyplot as plt
         import numpy as np
@@ -157,7 +159,7 @@ class Classifier(object):
 
         testset = torchvision.datasets.CIFAR10(root=self.Path, train=False,
                                                 download=True, transform=transform)
-        testloader = torch.utils.data.DataLoader(testset, batch_size=4,
+        testloader = torch.utils.data.DataLoader(testset, batch_size=40,
                                                     shuffle=False, num_workers=2)
 
         classes = ('plane', 'car', 'bird', 'cat',
@@ -236,14 +238,16 @@ class Classifier(object):
         def unpickle(file):
             fo = open(file, 'rb')
             dict = pickle.load(fo, encoding ='latin1')
-            X = dict['filenames'][:4]
+            X = dict['filenames'][6:10]
             fo.close()
             return X
 
         F = unpickle(self.Pickle)
         dataiter = iter(testloader)
         images, labels = next(dataiter)
-
+        images = images[6:10]
+        labels = labels[6:10]
+        
         # print images
         import matplotlib.pyplot as plt
         import numpy as np
