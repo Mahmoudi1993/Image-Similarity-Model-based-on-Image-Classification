@@ -59,8 +59,20 @@ the pretrained models classificatin would place in checkpoints.
 
 # Data labeling
 ```
-
+python New_Scratch_image_classification_inference.py
 ```
+**Output:**
+
+output: {'shooting_brake_s_000973.png': 'car', 'green_frog_s_000634.png': 'frog', 'tabby_cat_s_001397.png': 'cat', 'wagon_s_002806.png': 'car'}
+
+![data_labeling](https://github.com/Mahmoudi1993/Image-Similarity-Model-based-on-Image-Classification/assets/74957886/9737c110-d765-4646-ae7a-dd69a167b90c)
+
+# Image similarity
+```
+python New_Scratch_image_classification_inference.py
+```
+**Output:**
+
 
 
 # Command Line Args & Reference
