@@ -69,10 +69,10 @@ def main(argv):
 
   #list path
   for index in range(len(keys)):
-    Originalimages = []
+    InputImagesResnet18 = []
 
     for folder_name in values:
-      originalImages = []
+      inputImagesResnet18 = [] 
       M = Path + folder_name + '/'
 
 
@@ -81,13 +81,13 @@ def main(argv):
 
       for file in listdir(M):
           if os.path.isfile(M + file):
-              originalImages.append(M + file)
+              inputImagesResnet18.append(M + file)
           else:
-              originalImages += list_images_from_path(M + file)
+              inputImagesResnet18 += list_images_from_path(M + file)
 
 
-      Originalimages.append(originalImages)
-      #print(len(originalImages))
+      InputImagesResnet18.append(inputImagesResnet18)
+      #print(len(inputImagesResnet18))
   
   list_files =[]
   for i in range(len(keys)):
@@ -100,14 +100,14 @@ def main(argv):
 
   
   for index in range(len(keys)):
-    Originalimages[index].append(list_files[index])
+    InputImagesResnet18[index].append(list_files[index])
     
   #save
   keys_dic = keys
-  values_dic = Originalimages
+  values_dic = InputImagesResnet18
   for i in range(len(keys_dic)):
 
-    inputDir = Originalimages[i]
+    inputDir = InputImagesResnet18[i]
     inputDirCNN = 'inputImagesCNN{}'.format(i)
 
     if not os.path.exists(inputDirCNN):
@@ -118,7 +118,8 @@ def main(argv):
     import torchvision.transforms as transforms
     from PIL import Image
     
-    for imageName in Originalimages[i]:
+    for imageName in InputImagesResnet18[i]:
+
       basename_without_ext = os.path.splitext(os.path.basename(imageName))[0]
       I = Image.open(os.path.join(imageName))
 
@@ -190,7 +191,7 @@ def main(argv):
           return cnnModel, layer
 
   keys_dic = keys
-  values_dic = Originalimages
+  values_dic = InputImagesResnet18
 
   # generate vectors for all the images in the set
   for i in range(len(keys_dic)):
@@ -198,7 +199,8 @@ def main(argv):
     allVectors = {}
     print("Converting images to feature vectors:")
     keys_dic = keys
-    values_dic = Originalimages
+    values_dic = InputImagesResnet18
+    
   #for i in range(len(keys_dic)):
     inputImagesCNN = 'inputImagesCNN' + str(i)
     for image in tqdm(os.listdir(inputImagesCNN)):
